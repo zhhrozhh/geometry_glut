@@ -118,7 +118,8 @@ Point Triangle::circumcenter(){
     return LLSystem(LineSeg(p1,p2).perpendicularBisector(),LineSeg(p2,p3).perpendicularBisector()).intersectionPoint();
 }
 Circle Triangle::excircle(int fp,int sp){
-    int tp = 5-fp-sp;
+    int tp = 3-fp-sp;
+    cout<<tp <<" : "<< pList.size()<<endl;
     Line l1 = Angle(pList[tp],pList[fp],pList[sp]).supplementaryAngleBisector();
     Line l2 = Angle(pList[tp],pList[sp],pList[fp]).supplementaryAngleBisector();
     Point c = LLSystem(l1,l2).intersectionPoint();

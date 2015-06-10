@@ -36,7 +36,7 @@ void drawLine(Line l){
     }
 }
 void drawCircle(Circle c){
-    double x0 = c.c.x+c.r;
+    double x0 = c.c.x;
     double y0 = c.c.y;
     glBegin(GL_LINE_LOOP);
     for(int i=0;i<3600;i++)
