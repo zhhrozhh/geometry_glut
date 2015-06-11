@@ -10,6 +10,8 @@ geo2d and RFunction can cooperate with opgl for graph
 </per>
 <img src="http://www.cse.msu.edu/~zhangh40/PGW.png"/>
 <per>
+
 see demo for examples
+
 still under testing, might be very unstable
 </per>
